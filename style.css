@@ -1,0 +1,64 @@
+body {
+  background-color: #eee;
+  font: 14px "Open Sans", "Segoe UI", tahoma, arial;
+}
+.droparea,
+.download {
+  display: block;
+  width: 50%;
+  text-align: center;
+  border-radius: 5px;
+}
+.droparea {
+  padding: 10% 0;
+  margin: 20px auto;
+  color: #aaa;
+  border: 1px dashed;
+  -webkit-box-shadow: 0 0, inset 0 0 30px rgba(0,0,0,0.1);
+  box-shadow: 0 0, inset 0 0 30px rgba(0,0,0,0.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.droparea[for] {
+  cursor: pointer;
+}
+.download {
+  margin: 5px auto;
+  padding: 15px 0;
+  background-color: #3cb371;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transform: translate(0, -5px);
+  -ms-transform: translate(0, -5px);
+  transform: translate(0, -5px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0 1px #52c586, 0 2px #4ec483, 0 3px #48c27e, 0 4px #44c07c, 0 5px #3fbd77;
+  box-shadow: 0 1px #52c586, 0 2px #4ec483, 0 3px #48c27e, 0 4px #44c07c, 0 5px #3fbd77;
+}
+.download:hover {
+  background-color: #3fbd77;
+  -webkit-box-shadow: 0 1px #5bc88b, 0 2px #57c789, 0 3px #51c584, 0 4px #4dc482, 0 5px #47c27e;
+  box-shadow: 0 1px #5bc88b, 0 2px #57c789, 0 3px #51c584, 0 4px #4dc482, 0 5px #47c27e;
+}
+.download:active {
+  -webkit-transform: translate(0, -1px);
+  -ms-transform: translate(0, -1px);
+  transform: translate(0, -1px);
+  background-color: #3cb371;
+  -webkit-box-shadow: 0 1px #52c586;
+  box-shadow: 0 1px #52c586;
+}
+.download[hidden] {
+  display: block;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #ccc;
+  background-color: #ddd;
+  cursor: not-allowed;
+}

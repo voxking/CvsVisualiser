@@ -1,0 +1,64 @@
+body
+    background-color: #EEE
+    font: 14px "Open Sans", "Segoe UI", tahoma, arial
+
+.droparea, .download
+  display: block
+  width: 50%
+  text-align: center
+  border-radius: 5px
+
+// canvas
+//   width: 80%
+//   display: block
+//   margin: auto
+
+.droparea
+  padding: 10% 0
+  margin: 20px auto
+  color: #AAA
+  border: 1px dashed
+  box-shadow: 0 0, inset 0 0 30px rgba(0,0,0,.1)
+  transition: all .3s ease-in-out
+
+.droparea[for]
+  cursor: pointer
+
+.download
+  margin: 5px auto
+  padding: 15px 0
+  background-color: mediumseagreen
+  color: #FFF
+  text-decoration: none
+  transform: translate(0, -5px)
+  transition: all .3s
+  box-shadow:
+    0 1px lighten(@background-color, 15%),
+    0 2px lighten(@background-color, 13%),
+    0 3px lighten(@background-color, 10%),
+    0 4px lighten(@background-color, 8%),
+    0 5px lighten(@background-color, 5%)
+
+.download:hover
+  background-color: lighten(mediumseagreen, 5%)
+  box-shadow:
+    0 1px lighten(@background-color, 15%),
+    0 2px lighten(@background-color, 13%),
+    0 3px lighten(@background-color, 10%),
+    0 4px lighten(@background-color, 8%),
+    0 5px lighten(@background-color, 5%)
+
+.download:active
+  transform: translate(0, -1px)
+  background-color: mediumseagreen
+  box-shadow:
+    0 1px lighten(@background-color, 15%)
+
+.download[hidden]
+  display: block
+  transform: none
+  transition: none
+  box-shadow: none
+  color: #CCC
+  background-color: #DDD
+  cursor: not-allowed
